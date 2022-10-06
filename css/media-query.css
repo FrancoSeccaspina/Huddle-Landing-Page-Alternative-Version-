@@ -1,0 +1,230 @@
+@media (hover: hover) {
+}
+
+/* *************************** */
+/* OVER 500PX */
+/* *************************** */
+
+@media (min-width: 500px) {
+  .header-logo {
+    max-width: 190px;
+    margin-bottom: 40px;
+  }
+
+  /* ******* HERO - SECTION ******* */
+
+  .hero-heading {
+    font-size: clamp(1.5rem, calc(1.21rem + 1.43vw), 2.5rem);
+    /* font-size: 24px; */
+    /* font-size: 40px; */
+    margin-bottom: 14px;
+  }
+
+  .hero-paragraph {
+    font-family: var(--Text);
+    color: var(--Text-Color);
+    margin-bottom: 16px;
+  }
+
+  .btn {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  /* ******* HERO - SECTION ******* */
+
+  .feature-section {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* ******* CTA - SECTION ******* */
+
+  .cta-section-inner {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* ******* FOOTER ******* */
+
+  .company-info-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+/* *************************** */
+/* OVER 800PX */
+/* *************************** */
+
+@media (min-width: 1000px) {
+  .header-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px 14px 50px;
+  }
+
+  .header-btn {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--Text);
+    font-weight: 600;
+    padding: 14px 32px;
+    background: var(--White);
+    border-radius: 30px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  /* ******* HERO - SECTION ******* */
+
+  .hero-section {
+    min-height: 580px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    padding: 0 40px;
+  }
+
+  .hero-heading {
+    margin-bottom: 18px;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 20px;
+  }
+
+  .hero-main-content {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  /* ******* FEATURE - SECTION ******* */
+
+  /* .feature-section {
+    flex-direction: row;
+    text-align: start;
+  } */
+
+  .feature-section {
+    padding: 40px 100px;
+
+    margin-bottom: 40px;
+  }
+
+  .feature-heading {
+    margin-bottom: 14px;
+  }
+
+  .feature-paragraph {
+    font-size: 18px;
+    font-family: var(--Text);
+    color: var(--Text-Color);
+  }
+
+  .users-section {
+    margin-bottom: 280px;
+  }
+
+  .company-info-container {
+    flex-direction: row;
+  }
+
+  .company-info-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  /* .cta-section {
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    bottom: -70px;
+    z-index: 99;
+    background: var(--White);
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+  .cta-heading {
+    margin-bottom: 36px;
+  }
+
+  .cta-btn {
+    width: 400px;
+    font-size: 20px;
+    padding: 27px 32px;
+    border-radius: 50px;
+  }
+
+  /* ******* FOOTER ******* */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    color: var(--Pale-Cyan);
+    gap: 20px;
+    padding: 250px 40px 40px 40px;
+    font-family: var(--Text);
+  }
+
+  .footer-inner {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .company-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .company-addresss {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .company-addresss,
+  .company-phone,
+  .company-email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .footer-container-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
