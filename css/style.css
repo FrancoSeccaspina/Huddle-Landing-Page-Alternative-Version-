@@ -120,6 +120,10 @@ h2 {
   padding: 50px;
 }
 
+.header-btn {
+  display: none;
+}
+
 /* *************************** */
 /* HERO - SECTION */
 /* *************************** */
@@ -131,6 +135,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 0 20px;
 }
 
 .hero-main-content {
@@ -174,7 +179,7 @@ h2 {
   gap: 40px;
   text-align: center;
   padding: 40px 30px;
-  border-radius: 10px;
+  border-radius: 14px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
   transition: var(--Transition);
@@ -219,7 +224,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 14px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
   bottom: -70px;
   z-index: 99;
@@ -247,6 +252,7 @@ h2 {
 /* *************************** */
 
 footer {
+  max-width: 1440px;
   background: var(--Dark-Cyan);
 }
 
@@ -290,6 +296,19 @@ footer {
 /* *************************** */
 
 @media (min-width: 800px) {
+  .header-btn {
+    display: block;
+    width: 180px;
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--Text);
+    font-weight: 600;
+    padding: 14px 32px;
+    background: var(--White);
+    border-radius: 30px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+
   .hero-section {
     display: flex;
     flex-direction: row;
@@ -324,14 +343,6 @@ footer {
 
   .users-section {
     margin-bottom: 280px;
-  }
-
-  .footer-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
   }
 
   .company-info-container {
@@ -374,5 +385,25 @@ footer {
     font-size: 20px;
     padding: 27px 32px;
     border-radius: 50px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    color: var(--Pale-Cyan);
+    gap: 20px;
+    padding: 250px 40px 40px 40px;
+    font-family: var(--Text);
+  }
+
+  .company-info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
   }
 }
