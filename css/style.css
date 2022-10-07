@@ -86,20 +86,6 @@ header {
   background-position: center;
 }
 
-/* main,
-footer {
-  max-width: 1440px;
-  margin: 0 auto;
-} */
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 20px;
-  background: var(--White);
-}
-
 h1,
 h2 {
   font-family: var(--Heading);
@@ -159,6 +145,7 @@ h2 {
   align-items: center;
   gap: 60px;
   padding: 0 20px;
+  transition: var(--Transition);
 }
 
 .hero-main-content {
@@ -176,12 +163,14 @@ h2 {
   /* font-size: 24px; */
   /* font-size: 40px; */
   margin-bottom: 10px;
+  transition: var(--Transition);
 }
 
 .hero-paragraph {
   font-family: var(--Text);
   color: var(--Text-Color);
   margin-bottom: 12px;
+  transition: var(--Transition);
 }
 
 .btn {
@@ -195,11 +184,20 @@ h2 {
   padding: 17px 32px;
   border-radius: 30px;
   background: var(--Button);
+  transition: var(--Transition);
 }
 
 /* *************************** */
 /* MAIN - SECTION */
 /* *************************** */
+
+main {
+  display: grid;
+  place-content: center;
+  gap: 44px;
+  padding: 80px 20px 0 20px;
+  background: var(--White);
+}
 
 .feature-section {
   max-width: 1230px;
@@ -212,7 +210,7 @@ h2 {
   padding: 40px 30px;
   border-radius: 14px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   transition: var(--Transition);
 }
 
@@ -235,9 +233,9 @@ h2 {
   transition: var(--Transition);
 }
 
-.users-section {
+/* .users-section {
   margin-bottom: 80px;
-}
+} */
 
 /* *************************** */
 /* CTA - SECTION */
@@ -245,6 +243,7 @@ h2 {
 
 .cta-section {
   width: 100%;
+  min-height: 100px;
   position: relative;
   padding: 20px;
 }
@@ -261,7 +260,7 @@ h2 {
   text-align: center;
   border-radius: 14px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-  bottom: -180px;
+  bottom: -90px;
   z-index: 99;
   background: var(--White);
   left: 50%;
@@ -275,6 +274,7 @@ h2 {
   /* font-size: 32px; */
   font-weight: 400;
   margin-bottom: 16px;
+  transition: var(--Transition);
 }
 
 .cta-btn {
@@ -291,12 +291,9 @@ h2 {
 /* *************************** */
 
 footer {
-  font-size: clamp(0.88rem, calc(0.84rem + 0.18vw), 1rem);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: var(--Pale-Cyan);
   gap: 20px;
   padding: 250px 40px 40px 40px;
@@ -308,32 +305,39 @@ footer {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: clamp(0.88rem, calc(0.84rem + 0.18vw), 1rem);
+}
+
+.footer-company-info-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.company-info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.footer-container-one {
+.company-contact-container {
   max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.contact-icon {
-  font-size: 20px;
+.company-addresss {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
 }
 
-.company-addresss {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.company-contact-container li {
+  transition: var(--Transition);
+}
+
+.contact-icon {
+  font-size: 20px;
 }
 
 .company-phone,
@@ -344,43 +348,29 @@ footer {
   gap: 20px;
 }
 
-.company-contact-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .company-info-paragraph {
   max-width: 300px;
-}
-
-.footer-container-two {
-  display: flex;
-  justify-content: center;
-  /* flex-direction: row; */
-}
-
-.company-info-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .company-links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
-.footer-container-three {
+.company-links li {
+  transition: var(--Transition);
+}
+
+.company-social-media-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  gap: 20px;
 }
 
 .company-social-media-icons {
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -388,7 +378,7 @@ footer {
 }
 
 .footer-social-media-icon {
-  font-size: 22px;
+  transition: var(--Transition);
 }
 
 .copyright {
