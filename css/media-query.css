@@ -6,19 +6,6 @@
   }
 
   /* ******* FOOTER ******* */
-
-  .company-phone a:hover,
-  .company-email a:hover {
-    color: var(--Button);
-  }
-
-  .company-social-media-icons li:hover {
-    color: var(--Button);
-  }
-
-  .company-links li:hover {
-    color: var(--Button);
-  }
 }
 
 /* *************************** */
@@ -211,95 +198,4 @@
   }
 
   /* ******* FOOTER ******* */
-
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-company-info-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .company-contact-container {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .company-addresss,
-  .company-phone,
-  .company-email {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    text-align: start;
-  }
-
-  .company-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .company-social-media-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  /* footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    color: var(--Pale-Cyan);
-    gap: 20px;
-    padding: 250px 40px 40px 40px;
-    font-family: var(--Text);
-  }
-
-  .footer-inner {
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .company-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-  }
-
-  .company-addresss {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-  .company-addresss,
-  .company-phone,
-  .company-email {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-
-  .footer-container-three {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  } */
 }
