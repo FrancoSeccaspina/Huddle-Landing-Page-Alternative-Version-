@@ -1,51 +1,53 @@
 @media (hover: hover) {
-  .header-btn,
-  .hero-btn:hover,
-  .cta-btn:hover {
-    filter: brightness(1.4);
+  .header-btn:is(:hover, :focus-visible) {
+    background: var(--White-Hover);
+    outline: none;
   }
 
-  /* ******* FOOTER ******* */
+  .hero-btn:is(:hover, :focus-visible),
+  .cta-btn:is(:hover, :focus-visible) {
+    background: var(--Button-Hover);
+    outline: none;
+  }
+
+  .company-info a:is(:hover, :focus-visible),
+  .company-links a:is(:hover, :focus-visible),
+  .social-media-icons a:is(:hover, :focus-visible) {
+    color: var(--Button);
+    outline: none;
+  }
 }
 
 /* *************************** */
 /* OVER 500PX */
 /* *************************** */
 
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .header-logo {
-    max-width: 190px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   /* ******* HERO - SECTION ******* */
 
   .hero-heading {
     font-size: clamp(1.5rem, calc(1.21rem + 1.43vw), 2.5rem);
-    /* font-size: 24px; */
-    /* font-size: 40px; */
-    margin-bottom: 14px;
+    margin-bottom: 0.88rem;
   }
 
   .hero-paragraph {
     font-family: var(--Text);
     color: var(--Text-Color);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   .btn {
-    width: 280px;
-    font-size: 16px;
+    width: 17.5rem;
   }
 
   /* ******* FEATURE - SECTION ******* */
 
   main {
-    display: grid;
-    place-content: center;
-    gap: 44px;
-    padding: 120px 60px 0 60px;
-    background: var(--White);
+    padding: 7.5rem 3.75rem 0 3.75rem;
   }
 
   .feature-section {
@@ -60,20 +62,20 @@
   /* ******* CTA - SECTION ******* */
 
   .cta-section {
-    min-height: 200px;
+    min-height: 12.5rem;
   }
 
   .cta-section-inner {
-    padding: 38px;
+    padding: 2.375rem;
   }
 
   .cta-heading {
-    margin-bottom: 26px;
+    margin-bottom: 1.63rem;
   }
 
   .cta-btn {
-    width: 400px;
-    padding: 22px 32px;
+    width: 25rem;
+    padding: 1.38rem 2rem;
   }
 
   /* ******* FOOTER ******* */
@@ -81,53 +83,79 @@
   .company-info-links {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.625rem;
   }
 }
 
 /* *************************** */
-/* OVER 800PX */
+/* OVER 850PX */
+/* *************************** */
+
+@media (min-width: 53.13em) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-innner-links {
+    grid-template-areas: "info links social-media";
+    text-align: start;
+  }
+
+  .company-info {
+    flex-direction: row;
+  }
+
+  .company-links {
+    columns: 2;
+  }
+
+  .footer-company-links li {
+    margin-bottom: 1.25rem;
+    transition: var(--Transition);
+  }
+
+  .footer-company-links li:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .social-media-icons {
+    font-size: 1.88rem;
+  }
+
+  .copyright-container {
+    align-self: flex-end;
+  }
+}
+
+/* *************************** */
+/* OVER 1000PX */
 /* *************************** */
 
 @media (min-width: 1000px) {
   .header-nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 50px 50px 0 50px;
+    padding: 3.13rem 3.13rem 0 3.13rem;
   }
 
   .header-btn {
     display: block;
-    width: 200px;
-    text-align: center;
-    font-size: 15px;
-    font-family: var(--Text);
-    font-weight: 600;
-    padding: 14px 32px;
-    background: var(--White);
-    border-radius: 30px;
-    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
   }
 
   /* ******* HERO - SECTION ******* */
 
   .hero-section {
-    min-height: 580px;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 60px;
-    padding: 0 40px;
+
+    padding: 0 2.5rem;
   }
 
   .hero-heading {
-    margin-bottom: 18px;
+    margin-bottom: 1.13rem;
   }
 
   .hero-paragraph {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .hero-main-content {
@@ -135,34 +163,15 @@
     text-align: start;
   }
 
-  /* .btn {
-    width: 300px;
-    font-size: 16px;
-  } */
-
   /* ******* FEATURE - SECTION ******* */
 
   main {
-    display: grid;
-    place-content: center;
-    gap: 44px;
-    padding: 160px 60px 0 60px;
-    background: var(--White);
+    padding: 10rem 3.75rem 0 3.75rem;
   }
-
-  /* .feature-section {
-    flex-direction: row;
-    text-align: start;
-  } */
 
   .feature-section {
-    padding: 60px 120px;
-    gap: 120px;
-    /* margin-bottom: 40px; */
-  }
-
-  .feature-heading {
-    margin-bottom: 14px;
+    padding: 3.75rem 7.5rem;
+    gap: 7.5rem;
   }
 
   .feature-paragraph {
@@ -171,31 +180,15 @@
     color: var(--Text-Color);
   }
 
-  /* .users-section {
-    margin-bottom: 280px;
-  } */
-
-  /* .company-info-container {
-    flex-direction: row;
-  }
-
-  .company-info-links {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  } */
-
   .cta-section-inner {
-    padding: 58px;
+    padding: 3.63rem;
   }
 
   .cta-heading {
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
   }
 
   .cta-btn {
-    padding: 27px 32px;
+    padding: 1.69rem 2rem;
   }
-
-  /* ******* FOOTER ******* */
 }
