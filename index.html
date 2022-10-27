@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media-query.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>Huddle</title>
   </head>
   <body>
-    <header>
+    <header class="animate__animated animate__slideInDown">
       <nav class="header-nav" aria-label="primary">
         <img
           class="header-logo"
@@ -42,7 +47,9 @@
     </header>
 
     <main>
-      <section class="together-section feature-section">
+      <section
+        class="together-section feature-section animate__animated animate__slideInLeft"
+      >
         <div class="together-main-content feature-main-content">
           <h2 class="together-heading feature-heading">Grow Together</h2>
           <p class="together-paragraph feature-paragraph">
@@ -60,13 +67,17 @@
           />
         </div>
       </section>
-      <section class="conversations-section feature-section reverse">
+      <section
+        class="conversations-section feature-section reverse animate__animated animate__slideInRight"
+      >
         <div class="conversations-main-conten feature-main-content">
           <h2 class="conversations-heading feature-heading">
             Flowing Conversations
           </h2>
 
-          <p class="conversations-paragraph feature-paragraph">
+          <p
+            class="conversations-paragraph feature-paragraph animate__animated animate__slideInRight"
+          >
             You wouldn't paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
             flow.
